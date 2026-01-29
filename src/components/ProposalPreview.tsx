@@ -222,16 +222,18 @@ export function ProposalPreview({ formState, priceBreakdown }: ProposalPreviewPr
                                 <span className="text-base md:text-lg">{formatCurrency(priceBreakdown.monthlyTotal)}</span>
                             </div>
 
-                            <div className="flex justify-between font-semibold text-base md:text-lg mt-2">
-                                <span>{formState.commitmentLength}-Month Commitment Total</span>
-                                <span className="text-lg md:text-xl">{formatCurrency(priceBreakdown.fullCommitmentTotal)}</span>
-                            </div>
+                            {formState.commitmentLength > 3 && (
+                                <div className="flex justify-between text-sm md:text-base mt-2">
+                                    <span>{formState.commitmentLength}-Month Commitment Total</span>
+                                    <span>{formatCurrency(priceBreakdown.fullCommitmentTotal)}</span>
+                                </div>
+                            )}
 
                             <Separator className="my-3" />
 
-                            <div className="flex justify-between font-bold text-base md:text-lg">
+                            <div className="flex justify-between font-bold text-lg md:text-xl">
                                 <span>Due on Signing (3-Month Minimum)</span>
-                                <span className="text-lg md:text-xl">{formatCurrency(priceBreakdown.dueOnSigning)}</span>
+                                <span>{formatCurrency(priceBreakdown.dueOnSigning)}</span>
                             </div>
                         </div>
 

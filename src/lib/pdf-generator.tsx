@@ -405,25 +405,26 @@ function ProposalPDFDocument({ formState, priceBreakdown }: PDFDocumentProps) {
                         </Text>
                     </View>
 
-                    <View style={styles.totalBox}>
-                        {/* Grand Total */}
-                        <View style={{ borderBottomWidth: 1, borderBottomColor: '#525252', paddingBottom: 8, marginBottom: 8 }}>
-                            <Text style={styles.totalLabel}>
+                    {formState.commitmentLength > 3 && (
+                        <View style={styles.lineItem}>
+                            <Text style={styles.lineItemLabel}>
                                 {formState.commitmentLength}-Month Commitment Total
                             </Text>
-                            <Text style={styles.totalValue}>
+                            <Text style={styles.lineItemValue}>
                                 {formatCurrency(priceBreakdown.fullCommitmentTotal)}
                             </Text>
                         </View>
-                        {/* Due on Signing */}
-                        <View>
-                            <Text style={{ color: '#4ade80', fontSize: 8, textTransform: 'uppercase', marginBottom: 4 }}>
-                                Due on Signing (3-Month Minimum)
-                            </Text>
-                            <Text style={{ color: '#4ade80', fontSize: 18, fontWeight: 'bold' }}>
-                                {formatCurrency(priceBreakdown.dueOnSigning)}
-                            </Text>
-                        </View>
+                    )}
+
+                    <View style={styles.divider} />
+
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 8 }}>
+                        <Text style={{ fontSize: 14, fontWeight: 'bold', color: '#171717' }}>
+                            Due on Signing (3-Month Minimum)
+                        </Text>
+                        <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#171717' }}>
+                            {formatCurrency(priceBreakdown.dueOnSigning)}
+                        </Text>
                     </View>
                 </View>
 
