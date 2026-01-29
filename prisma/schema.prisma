@@ -1,0 +1,46 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Proposal {
+  id              String   @id @default(cuid())
+  proposalNumber  String   @unique
+  
+  // Client Info
+  clientName      String
+  clientEmail     String?
+  proposalDate    DateTime
+  
+  // Program Details
+  programType     String   // 'fat-loss' | 'muscle-building'
+  selectedTierId  String
+  inPersonSessions Int     @default(0) // 0, 2, 4, 6, 8, 10, or 12 sessions per month
+  
+  // Options
+  commitmentLength Int     // 3, 6, or 12
+  friendsAndFamily Boolean @default(false)
+  selectedAddOns   String[] // Array of add-on IDs
+  
+  // Calculated Prices (stored for historical accuracy)
+  baseTierPrice           Float
+  inPersonSessionsPrice   Float   @default(0)
+  friendsAndFamilyDiscount Float
+  commitmentDiscount      Float
+  monthlyTotal            Float
+  fullCommitmentTotal     Float
+  
+  // Status
+  status          String   @default("draft") // draft, sent, accepted, declined
+  
+  // Timestamps
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  @@index([clientName])
+  @@index([status])
+  @@index([createdAt])
+}
