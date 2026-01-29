@@ -238,6 +238,33 @@ export function ProposalForm({ formState, onUpdate }: ProposalFormProps) {
                 </CardContent>
             </Card>
 
+            {/* Payment Option */}
+            <Card>
+                <CardHeader className="pb-3 md:pb-4">
+                    <CardTitle className="text-base md:text-lg">Due on Signing</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <Select
+                        value={formState.paymentOption}
+                        onValueChange={(value) =>
+                            onUpdate({ paymentOption: value as '50-percent' | '3-month' })
+                        }
+                    >
+                        <SelectTrigger className="h-10 md:h-11">
+                            <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                            <SelectItem value="3-month">
+                                3-Month Minimum Upfront
+                            </SelectItem>
+                            <SelectItem value="50-percent">
+                                50% of Commitment Upfront
+                            </SelectItem>
+                        </SelectContent>
+                    </Select>
+                </CardContent>
+            </Card>
+
             {/* Add-Ons */}
             <Card>
                 <CardHeader className="pb-3 md:pb-4">

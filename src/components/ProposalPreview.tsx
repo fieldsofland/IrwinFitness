@@ -232,7 +232,9 @@ export function ProposalPreview({ formState, priceBreakdown }: ProposalPreviewPr
                             <Separator className="my-3" />
 
                             <div className="flex justify-between font-bold text-lg md:text-xl">
-                                <span>Due on Signing (3-Month Minimum)</span>
+                                <span>
+                                    Due on Signing ({formState.paymentOption === '50-percent' ? '50%' : '3-Month Min'})
+                                </span>
                                 <span>{formatCurrency(priceBreakdown.dueOnSigning)}</span>
                             </div>
                         </div>

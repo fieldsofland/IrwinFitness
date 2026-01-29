@@ -420,7 +420,7 @@ function ProposalPDFDocument({ formState, priceBreakdown }: PDFDocumentProps) {
 
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 8 }}>
                         <Text style={{ fontSize: 14, fontWeight: 'bold', color: '#171717' }}>
-                            Due on Signing (3-Month Minimum)
+                            Due on Signing ({formState.paymentOption === '50-percent' ? '50%' : '3-Month Min'})
                         </Text>
                         <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#171717' }}>
                             {formatCurrency(priceBreakdown.dueOnSigning)}

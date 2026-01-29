@@ -20,6 +20,7 @@ const getInitialFormState = (): ProposalFormState => ({
     inPersonSessions: 0,
     commitmentLength: 3 as CommitmentLength,
     friendsAndFamily: false,
+    paymentOption: '3-month',
     selectedAddOns: [],
 });
 

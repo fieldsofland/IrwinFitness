@@ -113,8 +113,14 @@ export function calculatePriceBreakdown(formState: ProposalFormState): PriceBrea
     const fullCommitmentTotal =
         monthlyTotal * formState.commitmentLength + oneTimeAddOnsTotal;
 
-    // Due on signing (always 3 months minimum)
-    const dueOnSigning = monthlyTotal * MINIMUM_BILLING_MONTHS + oneTimeAddOnsTotal;
+    // Due on signing - based on payment option selection
+    let dueOnSigning: number;
+    if (formState.paymentOption === '50-percent') {
+        dueOnSigning = fullCommitmentTotal * 0.5;
+    } else {
+        // 3-month minimum
+        dueOnSigning = monthlyTotal * MINIMUM_BILLING_MONTHS + oneTimeAddOnsTotal;
+    }
 
     return {
         baseTierPrice,

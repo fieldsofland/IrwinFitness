@@ -22,6 +22,9 @@ export interface AddOn {
 // Commitment length
 export type CommitmentLength = 3 | 6 | 12;
 
+// Payment option for due on signing
+export type PaymentOption = '50-percent' | '3-month';
+
 // In-person session count options (multiples of 2)
 export type SessionCount = 0 | 2 | 4 | 6 | 8 | 10 | 12;
 
@@ -45,6 +48,9 @@ export interface ProposalFormState {
 
   // Discounts
   friendsAndFamily: boolean;
+
+  // Payment option
+  paymentOption: PaymentOption;
 
   // Add-ons
   selectedAddOns: string[];
