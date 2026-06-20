@@ -11,13 +11,14 @@ Online-native content creator and brand voice who turns culture into attention. 
 
 ## Experience
 
-### Social & Content Lead — Casa Cugine
+### Brand & Content Lead — Casa Cugine
 *2020 – Present*
-- Own the brand's voice and daily content as sole social lead — concept, write, shoot, edit, and publish.
+- Own the brand's voice and daily content as social lead — concept, write, shoot, edit, and publish.
 - Write scroll-stopping hooks, captions, and short-form scripts that grew the account **76.6% in six months** (+46K net followers to 106K+).
 - Drove **19.8M views** and **4.5M+ accounts reached (+82.8%)**, with ~89% of reach from non-followers — content engineered to win attention beyond the existing audience.
 - Generated **1.17M+ interactions** (77% from non-followers) by reading culture and reacting fast; top posts beat the account baseline by 200%+.
-- Built recurring, format-driven content and ran constant experiments on tone, format, and distribution at a ~25-post/month cadence.
+- Directed brand identity across every surface — website, in-store graphics, packaging, and store environment — reviving the original logo's retro checkered motif for one cohesive look.
+- Partnered weekly with the founder to set direction and new initiatives, then executed autonomously — from launching content series to pre-producing a YouTube show about the brand.
 
 ### Director / Creative Producer — Freelance
 *2021 – Present*
