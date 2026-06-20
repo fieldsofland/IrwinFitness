@@ -3,162 +3,124 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Dena Rongakos — Content &amp; Social Writer</title>
+<title>Dena Rongakos — Resume</title>
 <style>
-  :root {
-    --ink:    #14151a;
-    --muted:  #5b606b;
-    --hair:   #e3e5ea;
-    --accent: #1f5fff;
-    --paper:  #ffffff;
-    --max:    760px;
-  }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
+  /* ---- Minimal, black-and-white, US Letter (8.5 x 11in) ---- */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { background: #e9e9e9; }
+
   body {
-    margin: 0;
-    background: #f4f5f7;
-    color: var(--ink);
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-                 Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #111;
+    font-size: 10.5pt;
+    line-height: 1.4;
     -webkit-font-smoothing: antialiased;
   }
+
+  /* The page itself: exact Letter dimensions */
   .page {
-    max-width: var(--max);
-    margin: 32px auto;
-    background: var(--paper);
-    padding: 56px 60px;
-    box-shadow: 0 6px 30px rgba(20, 21, 26, 0.08);
-    border-radius: 6px;
+    width: 8.5in;
+    min-height: 11in;
+    margin: 24px auto;
+    padding: 0.6in 0.7in;
+    background: #fff;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.14);
   }
 
-  header { margin-bottom: 22px; }
+  /* ---- Header ---- */
   h1 {
-    font-size: 34px;
-    line-height: 1.05;
-    letter-spacing: -0.02em;
-    margin: 0 0 4px;
+    font-size: 23pt;
     font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
   }
   .role {
-    font-size: 15px;
+    font-size: 11pt;
     font-weight: 600;
-    color: var(--accent);
-    letter-spacing: 0.02em;
-    margin: 0 0 12px;
+    margin-top: 3px;
   }
   .contact {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px 16px;
-    font-size: 12.5px;
-    color: var(--muted);
+    font-size: 9pt;
+    color: #333;
+    margin-top: 6px;
   }
-  .contact a { color: var(--muted); text-decoration: none; }
-  .contact a:hover { color: var(--accent); }
-  .contact span.sep { color: var(--hair); }
+  .contact a { color: #333; text-decoration: none; }
 
+  /* ---- Summary ---- */
   .summary {
-    margin: 18px 0 0;
-    font-size: 14.5px;
-    color: #2c2f37;
+    margin-top: 13px;
+    font-size: 10pt;
   }
 
-  /* Impact band */
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
-    margin: 20px 0 4px;
-  }
-  .stat {
-    border: 1px solid var(--hair);
-    border-radius: 8px;
-    padding: 12px 14px;
-    text-align: left;
-  }
-  .stat-num {
-    display: block;
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: var(--accent);
-    line-height: 1.1;
-  }
-  .stat-lbl {
-    display: block;
-    font-size: 11px;
-    color: var(--muted);
-    margin-top: 3px;
-    line-height: 1.35;
-  }
+  /* ---- Sections ---- */
+  section { margin-top: 16px; }
 
-  section { margin-top: 24px; }
   h2 {
-    font-size: 11.5px;
+    font-size: 9.5pt;
     text-transform: uppercase;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.12em;
     font-weight: 700;
-    color: var(--ink);
-    margin: 0 0 14px;
-    padding-bottom: 7px;
-    border-bottom: 1.5px solid var(--ink);
+    border-bottom: 1px solid #111;
+    padding-bottom: 3px;
+    margin-bottom: 9px;
   }
 
-  .entry { margin-bottom: 18px; }
+  /* ---- Experience ---- */
+  .entry { margin-bottom: 11px; }
   .entry:last-child { margin-bottom: 0; }
+
   .entry-head {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    gap: 16px;
+    gap: 14px;
   }
-  .entry-title { font-weight: 700; font-size: 14.5px; }
-  .entry-org  { font-weight: 600; color: var(--accent); }
-  .entry-date {
-    font-size: 12px;
-    color: var(--muted);
-    white-space: nowrap;
-    font-variant-numeric: tabular-nums;
-  }
-  ul.bullets { margin: 7px 0 0; padding-left: 18px; }
-  ul.bullets li { margin-bottom: 3px; color: #33363f; }
-  ul.bullets li::marker { color: var(--accent); }
+  .entry-title { font-weight: 700; }
+  .entry-date  { font-size: 9pt; color: #555; white-space: nowrap; }
 
-  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 28px; }
-  ul.tags { list-style: none; margin: 0; padding: 0; }
-  ul.tags li {
-    padding: 4px 0;
-    border-bottom: 1px solid var(--hair);
-    font-size: 13px;
-  }
-  ul.tags li:last-child { border-bottom: 0; }
-  .proj-name { font-weight: 600; }
-  .proj-meta { color: var(--muted); }
+  ul.bullets { margin: 4px 0 0; padding-left: 16px; }
+  ul.bullets li { margin-bottom: 2px; }
 
-  .edu-row {
+  /* ---- Skills ---- */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 28px;
+  }
+  ul.skills { list-style: none; }
+  ul.skills li {
+    padding-left: 12px;
+    position: relative;
+    margin-bottom: 2px;
+  }
+  ul.skills li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+  }
+
+  /* ---- Education ---- */
+  .edu-head {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    gap: 16px;
   }
   .edu-school { font-weight: 700; }
-  .edu-detail { color: var(--muted); font-size: 13px; }
+  .edu-detail { font-size: 9.5pt; color: #333; }
 
+  /* ---- Print ---- */
   @media print {
-    body { background: #fff; font-size: 11.5px; }
+    html, body { background: #fff; }
     .page {
-      margin: 0; max-width: none; box-shadow: none;
-      border-radius: 0; padding: 0;
+      width: auto;
+      min-height: 0;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
     }
-    @page { margin: 13mm 15mm; }
-    h1 { font-size: 27px; }
-    section { margin-top: 16px; }
-    .entry { margin-bottom: 12px; }
-    .stat { border-color: #cfd2d8; }
-    a { color: inherit; }
+    @page { size: letter; margin: 0.6in 0.7in; }
+    a { color: #111; }
   }
 </style>
 </head>
@@ -166,115 +128,95 @@
   <main class="page">
     <header>
       <h1>Dena Rongakos</h1>
-      <p class="role">Content &amp; Social Writer &middot; Brand Voice</p>
+      <div class="role">Brand &amp; Content Lead</div>
       <div class="contact">
-        <span>Brooklyn, New York</span>
-        <span class="sep">/</span>
-        <a href="mailto:your.email@example.com">your.email@example.com</a>
-        <span class="sep">/</span>
-        <span>(000)&nbsp;000-0000</span>
-        <span class="sep">/</span>
+        Brooklyn, New York &nbsp;&middot;&nbsp;
+        <a href="mailto:your.email@example.com">your.email@example.com</a> &nbsp;&middot;&nbsp;
+        (000)&nbsp;000-0000 &nbsp;&middot;&nbsp;
         <a href="https://linkedin.com/in/your-handle">linkedin.com/in/your-handle</a>
       </div>
     </header>
 
     <p class="summary">
       Online-native content creator and brand voice who turns culture into
-      attention. As sole social lead for Casa Cugine, I wrote the hooks,
-      captions, and short-form scripts that grew the account
-      <strong>76.6% in six months</strong> to <strong>106K+ followers</strong>,
-      with <strong>~89% of reach coming from non-followers</strong>&mdash;proof of
-      content built to win attention, not just preach to an existing audience. I
-      live for internet humor, timing, and recurring formats that compound, and I
-      iterate fast on tone, format, and distribution.
+      attention. As sole social lead for Casa Cugine, I wrote the hooks, captions,
+      and short-form scripts that grew the account 76.6% in six months to 106K+
+      followers, with roughly 89% of reach coming from non-followers. I work
+      across brand identity, short-form video, and recurring formats that
+      compound, and I iterate fast on tone, format, and distribution.
     </p>
-
-    <section aria-label="Impact highlights">
-      <div class="stats">
-        <div class="stat"><span class="stat-num">+76.6%</span><span class="stat-lbl">Follower growth in 6 months (106K+ total)</span></div>
-        <div class="stat"><span class="stat-num">19.8M</span><span class="stat-lbl">Views &middot; 4.5M+ accounts reached (+82.8%)</span></div>
-        <div class="stat"><span class="stat-num">1.17M+</span><span class="stat-lbl">Interactions &middot; 77% from non-followers</span></div>
-      </div>
-    </section>
 
     <section>
       <h2>Experience</h2>
 
       <div class="entry">
         <div class="entry-head">
-          <div><span class="entry-title">Brand &amp; Content Lead</span>,
-            <span class="entry-org">Casa Cugine</span></div>
+          <div><span class="entry-title">Brand &amp; Content Lead</span>, Casa Cugine</div>
           <div class="entry-date">2020 &ndash; Present</div>
         </div>
         <ul class="bullets">
-          <li>Own the brand's voice and daily content as social lead&mdash;concept, write, shoot, edit, and publish.</li>
-          <li>Write scroll-stopping hooks, captions, and short-form scripts that grew the account <strong>76.6% in six months</strong> (+46K net followers to 106K+).</li>
-          <li>Drove <strong>19.8M views</strong> and <strong>4.5M+ accounts reached (+82.8%)</strong>, with ~89% of reach from non-followers&mdash;content engineered to win attention beyond the existing audience.</li>
-          <li>Generated <strong>1.17M+ interactions</strong> (77% from non-followers) by reading culture and reacting fast; top posts beat the account baseline by 200%+.</li>
-          <li>Directed brand identity across every surface&mdash;website, in-store graphics, packaging, and store environment&mdash;reviving the original logo's retro checkered motif for one cohesive look.</li>
-          <li>Partnered weekly with the founder to set direction and new initiatives, then executed autonomously&mdash;from launching content series to pre-producing a YouTube show about the brand.</li>
+          <li>Own the brand's voice and daily content as social lead &mdash; concept, write, shoot, edit, and publish.</li>
+          <li>Wrote the hooks, captions, and short-form scripts that grew the account 76.6% in six months (+46K net followers to 106K+).</li>
+          <li>Drove 19.8M views and 4.5M+ accounts reached (+82.8%), with ~89% of reach from non-followers &mdash; content built to win attention beyond the existing audience.</li>
+          <li>Generated 1.17M+ interactions (77% from non-followers) by reading culture and reacting fast; top posts beat the account baseline by 200%+.</li>
+          <li>Directed brand identity across every surface &mdash; website, in-store graphics, packaging, and store environment &mdash; reviving the original logo's retro checkered motif for one cohesive look.</li>
+          <li>Partnered weekly with the founder to set direction and new initiatives, then executed autonomously &mdash; from launching content series to pre-producing a YouTube show about the brand.</li>
         </ul>
       </div>
 
       <div class="entry">
         <div class="entry-head">
-          <div><span class="entry-title">Director / Creative Producer</span>,
-            <span class="entry-org">Freelance</span></div>
+          <div><span class="entry-title">Director / Creative Producer</span>, Freelance</div>
           <div class="entry-date">2021 &ndash; Present</div>
         </div>
         <ul class="bullets">
           <li>Write treatments, narratives, and shot lists; concept and direct music videos from idea through post-production.</li>
           <li>Translate an artist's POV into a recognizable visual and verbal identity across a campaign.</li>
-          <li>Coordinate clients, talent, and partners to ship on tight timelines.</li>
         </ul>
       </div>
 
       <div class="entry">
         <div class="entry-head">
-          <div><span class="entry-title">Production Designer</span>,
-            <span class="entry-org">Freelance</span></div>
+          <div><span class="entry-title">Production Designer</span>, Freelance</div>
           <div class="entry-date">2020 &ndash; 2024</div>
         </div>
         <ul class="bullets">
-          <li>Built visual worlds and treatments for editorial and branded shoots; developed decks and moodboards.</li>
-          <li>Collaborated with photographers, stylists, and creative teams to realize a shared vision on set.</li>
+          <li>Built visual worlds, decks, and treatments for editorial and branded shoots alongside photographers and stylists.</li>
         </ul>
       </div>
 
       <div class="entry">
         <div class="entry-head">
-          <div><span class="entry-title">Sales Coordinator</span>,
-            <span class="entry-org">GANNI</span></div>
+          <div><span class="entry-title">Sales Coordinator</span>, GANNI</div>
           <div class="entry-date">2024 &ndash; 2025</div>
         </div>
         <ul class="bullets">
-          <li>Translated brand storytelling into in-person experience; deep product knowledge across seasonal collections.</li>
-          <li>Contributed to visual merchandising aligned to the brand aesthetic.</li>
+          <li>Translated brand storytelling into in-person experience with deep product knowledge across seasonal collections.</li>
         </ul>
       </div>
     </section>
 
     <section>
       <h2>Skills</h2>
-      <div class="grid-2">
-        <ul class="tags">
+      <div class="skills-grid">
+        <ul class="skills">
           <li>Brand Voice &amp; Copywriting</li>
           <li>Short-Form Scripts, Hooks &amp; Captions</li>
           <li>Social Strategy &amp; Distribution</li>
           <li>Trend Research &amp; Cultural Timing</li>
         </ul>
-        <ul class="tags">
+        <ul class="skills">
           <li>Content Formats &amp; Series Development</li>
           <li>Analytics &amp; Fast Iteration</li>
           <li>Art Direction &amp; Short-Form Video</li>
-          <li>Figma &middot; Canva &middot; Adobe &middot; CapCut</li>
+          <li>Figma, Canva, Adobe, CapCut</li>
         </ul>
       </div>
     </section>
 
     <section>
       <h2>Education</h2>
-      <div class="edu-row">
+      <div class="edu-head">
         <span class="edu-school">Fashion Institute of Design &amp; Merchandising (FIDM)</span>
         <span class="entry-date">2018 &ndash; 2021</span>
       </div>

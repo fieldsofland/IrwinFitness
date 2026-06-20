@@ -1,5 +1,5 @@
 # Dena Rongakos
-**Content & Social Writer · Brand Voice**
+**Brand & Content Lead**
 
 Brooklyn, New York · your.email@example.com · (000) 000-0000 · linkedin.com/in/your-handle
 
@@ -24,17 +24,14 @@ Online-native content creator and brand voice who turns culture into attention. 
 *2021 – Present*
 - Write treatments, narratives, and shot lists; concept and direct music videos from idea through post-production.
 - Translate an artist's POV into a recognizable visual and verbal identity across a campaign.
-- Coordinate clients, talent, and partners to ship on tight timelines.
 
 ### Production Designer — Freelance
 *2020 – 2024*
-- Built visual worlds and treatments for editorial and branded shoots; developed decks and moodboards.
-- Collaborated with photographers, stylists, and creative teams to realize a shared vision on set.
+- Built visual worlds, decks, and treatments for editorial and branded shoots alongside photographers and stylists.
 
 ### Sales Coordinator — GANNI
 *2024 – 2025*
-- Translated brand storytelling into in-person experience; deep product knowledge across seasonal collections.
-- Contributed to visual merchandising aligned to the brand aesthetic.
+- Translated brand storytelling into in-person experience with deep product knowledge across seasonal collections.
 
 ## Skills
 - Brand Voice & Copywriting
