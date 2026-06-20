@@ -1,55 +1,49 @@
 # Dena Rongakos
-**Social Media & Content Specialist**
+**Content & Social Writer · Brand Voice**
 
 Brooklyn, New York · your.email@example.com · (000) 000-0000 · linkedin.com/in/your-handle
 
 ---
 
-Multidisciplinary creative specializing in social-first content, visual storytelling, and brand identity across fashion, music, and digital culture. Experienced concepting, directing, and editing short-form video and cross-platform campaigns — with a sharp instinct for internet culture, aesthetics, and emerging trends, and the operational rigor to take ideas from concept to publish.
+Online-native content creator and brand voice who turns culture into attention. As sole social lead for Casa Cugine, I wrote the hooks, captions, and short-form scripts that grew the account **76.6% in six months** to **106K+ followers**, with **~89% of reach from non-followers** — proof of content built to win attention, not just preach to an existing audience. I live for internet humor, timing, and recurring formats that compound, and I iterate fast on tone, format, and distribution.
+
+**Impact:** +76.6% follower growth in 6 months (106K+) · 19.8M views · 4.5M+ accounts reached (+82.8%) · 1.17M+ interactions (77% from non-followers)
 
 ## Experience
 
-### Manager & Creative Lead — Casa Cugine
+### Social & Content Lead — Casa Cugine
 *2020 – Present*
-- Lead creative direction for social media, producing short-form content end-to-end — concept, filming, and editing.
-- Create handcrafted content aligned with cultural moments and brand voice to grow engagement and reach.
-- Design visual assets — video, graphics, and campaign content — for cohesive digital storytelling.
-- Build creative decks and rollout plans for campaigns and new initiatives.
-- Partner cross-functionally to execute content strategy and maintain a consistent brand presence.
+- Own the brand's voice and daily content as sole social lead — concept, write, shoot, edit, and publish.
+- Write scroll-stopping hooks, captions, and short-form scripts that grew the account **76.6% in six months** (+46K net followers to 106K+).
+- Drove **19.8M views** and **4.5M+ accounts reached (+82.8%)**, with ~89% of reach from non-followers — content engineered to win attention beyond the existing audience.
+- Generated **1.17M+ interactions** (77% from non-followers) by reading culture and reacting fast; top posts beat the account baseline by 200%+.
+- Built recurring, format-driven content and ran constant experiments on tone, format, and distribution at a ~25-post/month cadence.
 
 ### Director / Creative Producer — Freelance
 *2021 – Present*
-- Concept, direct, and execute music videos from ideation through post-production.
-- Develop visual narratives, shot lists, and creative direction aligned with artist identity.
-- Coordinate across clients, creative teams, talent, vendors, and production partners to keep shoots aligned and efficient.
-- Manage editing, color, and pacing for a cohesive final delivery.
+- Write treatments, narratives, and shot lists; concept and direct music videos from idea through post-production.
+- Translate an artist's POV into a recognizable visual and verbal identity across a campaign.
+- Coordinate clients, talent, and partners to ship on tight timelines.
 
 ### Production Designer — Freelance
 *2020 – 2024*
-- Translate creative direction into physical and visual environments for editorial and branded shoots.
-- Collaborate with photographers, stylists, and creative teams to realize a shared vision.
-- Develop decks, moodboards, and visual treatments, and support on-set execution.
+- Built visual worlds and treatments for editorial and branded shoots; developed decks and moodboards.
+- Collaborated with photographers, stylists, and creative teams to realize a shared vision on set.
 
 ### Sales Coordinator — GANNI
 *2024 – 2025*
-- Delivered personalized styling and client support in a contemporary fashion retail environment.
-- Maintained deep product knowledge across seasonal collections to guide fit, styling, and purchase decisions.
-- Contributed to visual merchandising and in-store presentation aligned with the brand aesthetic.
+- Translated brand storytelling into in-person experience; deep product knowledge across seasonal collections.
+- Contributed to visual merchandising aligned to the brand aesthetic.
 
-## Skills & Tools
-- Social Media Strategy & Content Creation
-- Short-Form Video — Concept + Edit (CapCut, DaVinci Resolve, Premiere)
-- Art Direction & Visual Storytelling
-- Trend Research & Cultural Analysis
-- Adobe Creative Suite
-- Graphic Design, Typography & Layout (Figma, Canva)
-- On-Set Creative Support & Production
-
-## Selected Projects
-- **Young Thug × Lyft** — Campaign, Production Design
-- **"5 Truths"** — Music Video, Production Design
-- **"Evergreen"** — Production Direction
-- **Editorial & Branded Shoots** — Art Department Lead
+## Skills
+- Brand Voice & Copywriting
+- Short-Form Scripts, Hooks & Captions
+- Social Strategy & Distribution
+- Trend Research & Cultural Timing
+- Content Formats & Series Development
+- Analytics & Fast Iteration
+- Art Direction & Short-Form Video (CapCut, Premiere, DaVinci)
+- Figma · Canva · Adobe Creative Suite
 
 ## Education
 **Fashion Institute of Design & Merchandising (FIDM)** — 2018 – 2021

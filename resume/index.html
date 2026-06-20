@@ -3,22 +3,18 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Dena Rongakos — Social Media &amp; Content Specialist</title>
+<title>Dena Rongakos — Content &amp; Social Writer</title>
 <style>
-  /* ---------- Design tokens ---------- */
   :root {
-    --ink:      #14151a;   /* near-black text            */
-    --muted:    #5b606b;   /* secondary text             */
-    --hair:     #e3e5ea;   /* hairline rules             */
-    --accent:   #1f5fff;   /* tech-forward blue accent   */
-    --paper:    #ffffff;
-    --max:      760px;
+    --ink:    #14151a;
+    --muted:  #5b606b;
+    --hair:   #e3e5ea;
+    --accent: #1f5fff;
+    --paper:  #ffffff;
+    --max:    760px;
   }
-
   * { box-sizing: border-box; }
-
   html { -webkit-text-size-adjust: 100%; }
-
   body {
     margin: 0;
     background: #f4f5f7;
@@ -29,7 +25,6 @@
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }
-
   .page {
     max-width: var(--max);
     margin: 32px auto;
@@ -39,9 +34,7 @@
     border-radius: 6px;
   }
 
-  /* ---------- Header ---------- */
-  header { margin-bottom: 26px; }
-
+  header { margin-bottom: 22px; }
   h1 {
     font-size: 34px;
     line-height: 1.05;
@@ -49,7 +42,6 @@
     margin: 0 0 4px;
     font-weight: 700;
   }
-
   .role {
     font-size: 15px;
     font-weight: 600;
@@ -57,7 +49,6 @@
     letter-spacing: 0.02em;
     margin: 0 0 12px;
   }
-
   .contact {
     display: flex;
     flex-wrap: wrap;
@@ -69,16 +60,42 @@
   .contact a:hover { color: var(--accent); }
   .contact span.sep { color: var(--hair); }
 
-  /* ---------- Summary ---------- */
   .summary {
-    margin: 20px 0 8px;
+    margin: 18px 0 0;
     font-size: 14.5px;
     color: #2c2f37;
   }
 
-  /* ---------- Sections ---------- */
-  section { margin-top: 26px; }
+  /* Impact band */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin: 20px 0 4px;
+  }
+  .stat {
+    border: 1px solid var(--hair);
+    border-radius: 8px;
+    padding: 12px 14px;
+    text-align: left;
+  }
+  .stat-num {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--accent);
+    line-height: 1.1;
+  }
+  .stat-lbl {
+    display: block;
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 3px;
+    line-height: 1.35;
+  }
 
+  section { margin-top: 24px; }
   h2 {
     font-size: 11.5px;
     text-transform: uppercase;
@@ -90,10 +107,8 @@
     border-bottom: 1.5px solid var(--ink);
   }
 
-  /* ---------- Experience entries ---------- */
   .entry { margin-bottom: 18px; }
   .entry:last-child { margin-bottom: 0; }
-
   .entry-head {
     display: flex;
     justify-content: space-between;
@@ -108,36 +123,18 @@
     white-space: nowrap;
     font-variant-numeric: tabular-nums;
   }
-
-  ul.bullets {
-    margin: 7px 0 0;
-    padding-left: 18px;
-  }
-  ul.bullets li {
-    margin-bottom: 3px;
-    color: #33363f;
-  }
+  ul.bullets { margin: 7px 0 0; padding-left: 18px; }
+  ul.bullets li { margin-bottom: 3px; color: #33363f; }
   ul.bullets li::marker { color: var(--accent); }
 
-  /* ---------- Two-up grids ---------- */
-  .grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6px 28px;
-  }
-
-  ul.tags {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 28px; }
+  ul.tags { list-style: none; margin: 0; padding: 0; }
   ul.tags li {
     padding: 4px 0;
     border-bottom: 1px solid var(--hair);
     font-size: 13px;
   }
   ul.tags li:last-child { border-bottom: 0; }
-
   .proj-name { font-weight: 600; }
   .proj-meta { color: var(--muted); }
 
@@ -150,20 +147,17 @@
   .edu-school { font-weight: 700; }
   .edu-detail { color: var(--muted); font-size: 13px; }
 
-  /* ---------- Print / PDF ---------- */
   @media print {
     body { background: #fff; font-size: 11.5px; }
     .page {
-      margin: 0;
-      max-width: none;
-      box-shadow: none;
-      border-radius: 0;
-      padding: 0;
+      margin: 0; max-width: none; box-shadow: none;
+      border-radius: 0; padding: 0;
     }
-    @page { margin: 14mm 16mm; }
-    h1 { font-size: 28px; }
-    section { margin-top: 18px; }
-    .entry { margin-bottom: 13px; }
+    @page { margin: 13mm 15mm; }
+    h1 { font-size: 27px; }
+    section { margin-top: 16px; }
+    .entry { margin-bottom: 12px; }
+    .stat { border-color: #cfd2d8; }
     a { color: inherit; }
   }
 </style>
@@ -172,7 +166,7 @@
   <main class="page">
     <header>
       <h1>Dena Rongakos</h1>
-      <p class="role">Social Media &amp; Content Specialist</p>
+      <p class="role">Content &amp; Social Writer &middot; Brand Voice</p>
       <div class="contact">
         <span>Brooklyn, New York</span>
         <span class="sep">/</span>
@@ -185,29 +179,39 @@
     </header>
 
     <p class="summary">
-      Multidisciplinary creative specializing in social-first content, visual
-      storytelling, and brand identity across fashion, music, and digital
-      culture. Experienced concepting, directing, and editing short-form video
-      and cross-platform campaigns&mdash;with a sharp instinct for internet
-      culture, aesthetics, and emerging trends, and the operational rigor to
-      take ideas from concept to publish.
+      Online-native content creator and brand voice who turns culture into
+      attention. As sole social lead for Casa Cugine, I wrote the hooks,
+      captions, and short-form scripts that grew the account
+      <strong>76.6% in six months</strong> to <strong>106K+ followers</strong>,
+      with <strong>~89% of reach coming from non-followers</strong>&mdash;proof of
+      content built to win attention, not just preach to an existing audience. I
+      live for internet humor, timing, and recurring formats that compound, and I
+      iterate fast on tone, format, and distribution.
     </p>
+
+    <section aria-label="Impact highlights">
+      <div class="stats">
+        <div class="stat"><span class="stat-num">+76.6%</span><span class="stat-lbl">Follower growth in 6 months (106K+ total)</span></div>
+        <div class="stat"><span class="stat-num">19.8M</span><span class="stat-lbl">Views &middot; 4.5M+ accounts reached (+82.8%)</span></div>
+        <div class="stat"><span class="stat-num">1.17M+</span><span class="stat-lbl">Interactions &middot; 77% from non-followers</span></div>
+      </div>
+    </section>
 
     <section>
       <h2>Experience</h2>
 
       <div class="entry">
         <div class="entry-head">
-          <div><span class="entry-title">Manager &amp; Creative Lead</span>,
+          <div><span class="entry-title">Social &amp; Content Lead</span>,
             <span class="entry-org">Casa Cugine</span></div>
           <div class="entry-date">2020 &ndash; Present</div>
         </div>
         <ul class="bullets">
-          <li>Lead creative direction for social media, producing short-form content end-to-end&mdash;concept, filming, and editing.</li>
-          <li>Create handcrafted content aligned with cultural moments and brand voice to grow engagement and reach.</li>
-          <li>Design visual assets&mdash;video, graphics, and campaign content&mdash;for cohesive digital storytelling.</li>
-          <li>Build creative decks and rollout plans for campaigns and new initiatives.</li>
-          <li>Partner cross-functionally to execute content strategy and maintain a consistent brand presence.</li>
+          <li>Own the brand's voice and daily content as sole social lead&mdash;concept, write, shoot, edit, and publish.</li>
+          <li>Write scroll-stopping hooks, captions, and short-form scripts that grew the account <strong>76.6% in six months</strong> (+46K net followers to 106K+).</li>
+          <li>Drove <strong>19.8M views</strong> and <strong>4.5M+ accounts reached (+82.8%)</strong>, with ~89% of reach from non-followers&mdash;content engineered to win attention beyond the existing audience.</li>
+          <li>Generated <strong>1.17M+ interactions</strong> (77% from non-followers) by reading culture and reacting fast; top posts beat the account baseline by 200%+.</li>
+          <li>Built recurring, format-driven content and ran constant experiments on tone, format, and distribution at a ~25-post/month cadence.</li>
         </ul>
       </div>
 
@@ -218,10 +222,9 @@
           <div class="entry-date">2021 &ndash; Present</div>
         </div>
         <ul class="bullets">
-          <li>Concept, direct, and execute music videos from ideation through post-production.</li>
-          <li>Develop visual narratives, shot lists, and creative direction aligned with artist identity.</li>
-          <li>Coordinate across clients, creative teams, talent, vendors, and production partners to keep shoots aligned and efficient.</li>
-          <li>Manage editing, color, and pacing for a cohesive final delivery.</li>
+          <li>Write treatments, narratives, and shot lists; concept and direct music videos from idea through post-production.</li>
+          <li>Translate an artist's POV into a recognizable visual and verbal identity across a campaign.</li>
+          <li>Coordinate clients, talent, and partners to ship on tight timelines.</li>
         </ul>
       </div>
 
@@ -232,9 +235,8 @@
           <div class="entry-date">2020 &ndash; 2024</div>
         </div>
         <ul class="bullets">
-          <li>Translate creative direction into physical and visual environments for editorial and branded shoots.</li>
-          <li>Collaborate with photographers, stylists, and creative teams to realize a shared vision.</li>
-          <li>Develop decks, moodboards, and visual treatments, and support on-set execution.</li>
+          <li>Built visual worlds and treatments for editorial and branded shoots; developed decks and moodboards.</li>
+          <li>Collaborated with photographers, stylists, and creative teams to realize a shared vision on set.</li>
         </ul>
       </div>
 
@@ -245,41 +247,26 @@
           <div class="entry-date">2024 &ndash; 2025</div>
         </div>
         <ul class="bullets">
-          <li>Delivered personalized styling and client support in a contemporary fashion retail environment.</li>
-          <li>Maintained deep product knowledge across seasonal collections to guide fit, styling, and purchase decisions.</li>
-          <li>Contributed to visual merchandising and in-store presentation aligned with the brand aesthetic.</li>
+          <li>Translated brand storytelling into in-person experience; deep product knowledge across seasonal collections.</li>
+          <li>Contributed to visual merchandising aligned to the brand aesthetic.</li>
         </ul>
       </div>
     </section>
 
     <section>
-      <h2>Skills &amp; Tools</h2>
+      <h2>Skills</h2>
       <div class="grid-2">
         <ul class="tags">
-          <li>Social Media Strategy &amp; Content Creation</li>
-          <li>Short-Form Video &mdash; Concept + Edit</li>
-          <li>Art Direction &amp; Visual Storytelling</li>
-          <li>Trend Research &amp; Cultural Analysis</li>
+          <li>Brand Voice &amp; Copywriting</li>
+          <li>Short-Form Scripts, Hooks &amp; Captions</li>
+          <li>Social Strategy &amp; Distribution</li>
+          <li>Trend Research &amp; Cultural Timing</li>
         </ul>
         <ul class="tags">
-          <li>Adobe Creative Suite (Premiere, Photoshop)</li>
-          <li>CapCut &middot; DaVinci Resolve</li>
-          <li>Graphic Design, Typography &amp; Layout</li>
-          <li>Figma &middot; Canva</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <h2>Selected Projects</h2>
-      <div class="grid-2">
-        <ul class="tags">
-          <li><span class="proj-name">Young Thug &times; Lyft</span> &mdash; <span class="proj-meta">Campaign, Production Design</span></li>
-          <li><span class="proj-name">&ldquo;5 Truths&rdquo;</span> &mdash; <span class="proj-meta">Music Video, Production Design</span></li>
-        </ul>
-        <ul class="tags">
-          <li><span class="proj-name">&ldquo;Evergreen&rdquo;</span> &mdash; <span class="proj-meta">Production Direction</span></li>
-          <li><span class="proj-name">Editorial &amp; Branded Shoots</span> &mdash; <span class="proj-meta">Art Department Lead</span></li>
+          <li>Content Formats &amp; Series Development</li>
+          <li>Analytics &amp; Fast Iteration</li>
+          <li>Art Direction &amp; Short-Form Video</li>
+          <li>Figma &middot; Canva &middot; Adobe &middot; CapCut</li>
         </ul>
       </div>
     </section>
